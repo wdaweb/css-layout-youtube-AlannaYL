@@ -1,0 +1,350 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: rgb(225, 225, 225)
+}
+
+.h1 {
+    height: 100%;
+}
+
+/* 搜尋欄--------------------------------------------- */
+#header {
+    background: rgb(247, 247, 247, 0.9);
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    position: fixed;
+    align-items: center;
+    margin: auto;
+    font-size: 0;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+}
+
+#header p {
+    display: inline;
+    line-height: 56px;
+    width: 24px;
+    height: 24px;
+    font-size: 1rem;
+    margin-right: 0;
+}
+
+#header i {
+    padding: 0 10px;
+}
+
+#header .search {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 56px;
+    padding: 0 1rem;
+    font-size: 0;
+    position: absolute;
+}
+
+#header .search input {
+    padding-top: 0px;
+    padding-bottom: 2px;
+    width: 450px;
+    height: 30px;
+    font-size: 1rem;
+}
+
+#header .search button {
+    margin: 0;
+    height: 36px;
+}
+
+#header .search p {
+    margin-left: 10px;
+    padding: 10px 5px;
+    border-radius: 50%;
+    background: rgb(238, 238, 238);
+}
+
+#header .search p:hover {
+    background: rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+
+
+#header .logo {
+    display: inline-block;
+    text-align: center;
+}
+
+#header img {
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    padding: 0;
+    margin-top: 5px;
+}
+
+#header .hstyle_r {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: 90%;
+}
+
+#header .hstyle_r p:last-of-type {
+    border: 1px solid rgb(84, 160, 190);
+    background: rgba(238, 238, 238, 0.8);
+    padding: 8px 10px 8px 8px;
+    color: rgb(108, 167, 190);
+}
+
+
+#header .hstyle_r p:last-of-type:hover {
+    cursor: pointer;
+}
+
+/* 影片-------------------------------------- */
+#container {
+    width: 100%;
+    height: 100%;
+    float: right;
+    position: absolute;
+}
+
+#container .nav_tag {
+    width: 100%;
+    height: 56px;
+    background: rgba(247, 247, 247, 0.8);
+    list-style: none;
+    margin: 56px 0 0 0;
+    border-top: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    position: fixed;
+    z-index: 1;
+}
+
+#container .nav_tag ul {
+    text-align: center;
+
+}
+
+#container .nav_tag li {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 50px;
+    background: rgb(218, 218, 218);
+}
+
+#container .nav_tag li:hover {
+    background: rgb(195, 195, 195);
+    cursor: pointer;
+}
+
+#container .row {
+    width: 84%;
+    height: 25%;
+    position: relative;
+    top: 15%;
+    left: 15%;
+    margin-top: 10px;
+    padding-left: 10px;
+
+}
+
+#container .row hr {
+    width: 95%;
+    float: left;
+}
+
+#container .col {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 100%;
+    padding: 0;
+    margin-left: 30px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+#container .col:hover {
+    position: relative;
+    transform: scale(1.1);
+    z-index: 1;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+#container .col img {
+    width: 100%;
+    height: 155px;
+}
+
+#container .col .sticker {
+    float: left;
+    width: 40px;
+    height: 100%;
+    margin-left: 4px;
+
+}
+
+#container .col .text {
+    margin-top: 5px;
+    float: left;
+    margin-left: 10px;
+    width: 270px;
+    height: 100%;
+}
+
+#container .col .text h1 {
+    font-size: 20px;
+}
+
+#container .col .text p {
+    font-size: .5rem;
+}
+
+#container .col .text i {
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 155px;
+}
+
+#container .col .text i:hover {
+    background: rgb(195, 195, 195);
+    color: white;
+    cursor: pointer;
+    width: 32px;
+}
+
+#container .col::after {
+    content: '10:00';
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    background: rgba(0, 0, 0);
+    opacity: 0.8;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    top: 135px;
+    right: 5px;
+    padding: 3px;
+}
+
+
+#container .row .col:hover::after {
+    content: '將滑鼠標懸停在上方即可撥放';
+    cursor: pointer;
+    width: 200px;
+    height: 10px;
+    background: rgba(0, 0, 0);
+    opacity: 0.8;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    top: 135px;
+    right: 5px;
+    z-index: 3;
+}
+
+
+#container .sticker img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#container .row hr {
+    border: 3px solid rgba(195, 195, 195, 1);
+    margin-bottom: 15px;
+}
+
+/* 側邊欄位---------------------------------------------- */
+#sidebar {
+    width: 256px;
+    background: rgb(247, 247, 247);
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#sidebar .item_1 i {
+    padding: 0 1rem;
+    margin-left: 5px
+}
+
+#sidebar .item_1 {
+    width: 256px;
+    height: 93%;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    font-size: 1rem;
+    overflow: scroll;
+}
+
+#sidebar .item_1 hr {
+
+    width: 235px;
+    text-align: left;
+}
+
+#sidebar .item_1 ul {
+    width: 100%;
+}
+
+#sidebar .item_1 li {
+    height: 40px;
+    line-height: 2rem;
+    padding-top: 6px;
+}
+
+#sidebar .item_1 h1 {
+    padding-left: 20px;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+#sidebar li:not(.signtext):hover {
+    background: rgb(218, 218, 218);
+}
+
+#sidebar .sign li:first-child {
+    padding: 0 10px 0 25px;
+}
+
+#sidebar .sign li:last-child {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 40%;
+    border: 1px solid rgb(84, 160, 190);
+    line-height: 35px;
+    padding-right: 10px;
+    color: rgb(108, 167, 190);
+}
+
+#sidebar .sign li:last-child:hover {
+    cursor: pointer;
+}
